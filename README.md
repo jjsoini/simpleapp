@@ -1,7 +1,7 @@
-# Simple App — a Vite starter for learning web basics
+# Simple App — learn to code with Claude Code
 
 A tiny, heavily-commented starter project for learning the three core
-languages of the web:
+languages of the web — **with Claude Code as your personal tutor**:
 
 - **HTML** — the *structure* and content of a page
 - **CSS** — how it *looks*
@@ -9,6 +9,12 @@ languages of the web:
 
 It uses [Vite](https://vite.dev), a fast development tool that reloads the page
 automatically whenever you save a file.
+
+## Who this is for
+
+Absolute beginners. You don't need any prior coding experience. You'll learn by
+working through short lessons and asking Claude Code to explain things, check
+your work, and walk you through each step.
 
 ## Getting started
 
@@ -20,12 +26,32 @@ npm run dev   # start the dev server
 Then open the printed URL (usually http://localhost:5173) in your browser.
 Try editing a file and saving — the page updates instantly.
 
+## Learning with Claude Code
+
+1. Open this project folder in **Claude Code** (the terminal CLI, IDE
+   extension, or desktop app).
+2. Start a session. Claude reads `CLAUDE.md` and your `progress.md`, then greets
+   you and suggests what to learn next.
+3. Work through `tutorials.md` — 16 bite-sized lessons (HTML, CSS, JS) plus a
+   final mini-project. Each lesson has a concept, an example from this app, and
+   a "Try it" task.
+4. Ask Claude anything as you go, for example:
+   - *"Explain lesson H2 to me."*
+   - *"I tried the exercise but it didn't work — here's my code."*
+   - *"What does this line in `main.js` do?"*
+   - *"Mark H1 as done and tell me what's next."*
+
+Your progress is tracked in `progress.md` (a simple checklist).
+
 ## How the app fits together
 
 ```
 simpleapp/
 ├── index.html        ← entry point: the browser loads this first
 ├── package.json      ← project info + the npm commands above
+├── tutorials.md      ← the beginner course (HTML, CSS, JS lessons)
+├── progress.md       ← your lesson checklist / progress tracker
+├── CLAUDE.md         ← tells Claude Code how to tutor you
 └── src/
     ├── main.js        ← starts the app, builds the page, wires up the button
     ├── counter.js     ← a small, reusable piece of logic (the click counter)
@@ -35,13 +61,6 @@ simpleapp/
 **The flow:** `index.html` loads `style.css` (looks) and `main.js` (behavior).
 `main.js` fills the empty `<div id="app">` with content, then imports
 `setupCounter` from `counter.js` to make the button count clicks.
-
-## Things to try
-
-1. Change the heading text in `src/main.js`.
-2. Change the `--brand` color at the top of `src/style.css`.
-3. In `src/counter.js`, make the count go up by `2` instead of `1`.
-4. Add a second button that resets the count back to `0`.
 
 ## Useful commands
 
