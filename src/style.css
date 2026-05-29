@@ -1,0 +1,92 @@
+/*
+  style.css — all the visual styling for the app.
+
+  CSS works by selecting elements and giving them rules.
+  A rule looks like:
+
+      selector {
+        property: value;
+      }
+
+  Try changing a color or number below and watch the page update instantly!
+*/
+
+/* ":root" is a place to store reusable values called "CSS variables".
+   Define a color once here, use it everywhere with var(--name). */
+:root {
+  --brand: #646cff;
+  --brand-dark: #535bf2;
+  --text: #213547;
+  --bg: #f7f7fb;
+  --card-bg: #ffffff;
+}
+
+/* "*" selects every element. This resets default spacing so layouts
+   behave predictably across browsers. */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the whole page body. */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: var(--text);
+  background-color: var(--bg);
+  /* Flexbox is a layout tool. These three lines center content
+     both horizontally and vertically on the screen. */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* 100vh = 100% of the viewport height */
+}
+
+/* A "class" selector starts with a dot. It matches any element
+   with class="card". Classes are reusable; ids (like #app) are unique. */
+.card {
+  background-color: var(--card-bg);
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  max-width: 420px;
+  width: 100%;
+}
+
+.card h1 {
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.card p {
+  margin-bottom: 1.5rem;
+  color: #5c6b7a;
+}
+
+/* Style the button. */
+button {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.7rem 1.4rem;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--brand);
+  color: white;
+  cursor: pointer; /* show a hand cursor on hover */
+  transition: background-color 0.2s; /* animate color changes smoothly */
+}
+
+/* ":hover" applies only while the mouse is over the button. */
+button:hover {
+  background-color: var(--brand-dark);
+}
+
+/* The number shown by our counter. */
+.count {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--brand);
+}

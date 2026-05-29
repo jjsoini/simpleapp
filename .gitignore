@@ -1,0 +1,9 @@
+# Dependencies installed by npm
+node_modules/
+
+# Production build output
+dist/
+
+# Logs and editor/OS noise
+*.log
+.DS_Store

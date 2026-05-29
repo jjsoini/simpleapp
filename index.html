@@ -1,0 +1,46 @@
+<!doctype html>
+<!--
+  index.html — the entry point of the app.
+
+  This is the very first file the browser loads. Everything you see on the
+  page starts here. Vite looks for this file automatically.
+
+  An HTML document is a tree of "elements" written with tags like <div>,
+  <h1>, and <button>. Tags usually come in pairs: an opening tag <p> and a
+  closing tag </p>, with content in between.
+-->
+<html lang="en">
+  <head>
+    <!-- "meta" tags give the browser information about the page (not shown on screen). -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- The text shown in the browser tab. -->
+    <title>Simple App</title>
+
+    <!--
+      Link to our stylesheet. CSS controls how things LOOK
+      (colors, spacing, fonts, layout).
+    -->
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+
+  <body>
+    <!--
+      The <body> holds everything visible on the page.
+
+      This single empty <div> is our "mount point" — JavaScript will fill it
+      with content. Open src/main.js to see how that happens.
+    -->
+    <div id="app"></div>
+
+    <!--
+      Load our JavaScript. JS makes the page INTERACTIVE
+      (responding to clicks, changing content, etc.).
+
+      type="module" lets us split code into separate files and "import" them,
+      which keeps projects organized as they grow.
+    -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "simpleapp",
+  "version": "1.0.0",
+  "description": "A simple Vite starter for learning HTML, CSS, and JavaScript",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}
