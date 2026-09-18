@@ -82,6 +82,22 @@ button:hover {
   background-color: var(--brand-dark);
 }
 
+/* A second, less "loud" button style — used for actions that aren't the
+   main one on the page. Classes let us layer extra styling on top of the
+   base "button" rule above: this button still gets everything from that
+   rule, and these lines override just the colors and add spacing. */
+.btn-secondary {
+  margin-top: 0.75rem;
+  background-color: transparent;
+  color: var(--brand);
+  border: 2px solid var(--brand);
+}
+
+.btn-secondary:hover {
+  background-color: var(--brand);
+  color: white;
+}
+
 /* The number shown by our counter. */
 .count {
   display: block;
