@@ -28,6 +28,7 @@ app.innerHTML = `
     <span class="count" id="count">0</span>
 
     <button id="counter-button">Click me</button>
+    <button class="btn-secondary">Secondary</button>
   </div>
 `;
 
